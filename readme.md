@@ -64,21 +64,54 @@ Amazon QuickSight
 Allows you to visualize S3 data by allowing you to create
 and publish interactive business intelligence dashboards.
 
-S3 Storage Lens
+- S3 Storage Lens
 
 Delivers organizational wide visibility into object storage usage,
 activity trends and make actionable recommendations to optimize costs.
 
-S3 Storage class Analysis
+- S3 Storage class Analysis
 
 This tool allows you to monitor access patterns across objects
 to help you decide when to transition data to the right storage
 
-AWS Budget
+- AWS Budget
 
 Allows you to set custom budgets to track your cost and usage.
 
-AWS Cost Explorer
+- AWS Cost Explorer
 
 Provides botha billing and usage report.
+
+
+#### S3 Storage Lens
+
+Provides a single view of object storage and activity across hundreds of
+acconts
+
+Produces actionable recommnedations to help improve cost-efficiency and apply
+data protection best practices
+
+
+#### AWS Budgets
+
+Monthly fixed target
+
+Monthly variable target budget
+
+Fixed usage amount
+
+Daily utilization budget
+
+Best Practices
+
+- Use AWS Budget to set custom budgets based on your costs, usage,reservation
+utilization, and RI coverage.
+
+- Set budgets on a recurring basis so that budget alerts don't unexpectedly
+stop coming.
+
+- AWS requires approximately five weeks of usage data to generate 
+ budget forecasts. If you set a budget to alert based on a 
+ forecasted amount, this budget alert isn't initiated until 
+you have enough historical usage information.
 
