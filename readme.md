@@ -115,3 +115,8 @@ stop coming.
  forecasted amount, this budget alert isn't initiated until 
 you have enough historical usage information.
 
+
+#### Access Point
+
+Provide simplified control for shared dataset in the same bucket.
+Each access point has its own access permissions.
