@@ -193,3 +193,55 @@ Reduce the need to build self-managed proxy servers with private IPs for S3 acce
 
 ![interface-endpoint.png](./images/interface-endpoint.png)
 
+
+### Macie
+
+Macie automates the discovery of sensitive data, such as PII, and financial data, It provides you with an inventoryu of S3 buckets and their accesscontrol and 
+encryption settings.
+
+
+- Discovery sensitive data
+- Uses machine learning
+- Inventory and access control
+- Cloudtrail integration
+
+
+### Amazon GuardDuty
+
+Is a security monitoring service that analyzes and procceses certain types of AWS Logs, such as AWS Cloudtrail data event logs for amazon S3.
+
+
+### Disaster Recovery for S3.
+
+- Versioning objects
+
+- Object Lock
+
+- S3 Replication
+
+
+### S3 Object Lock
+
+Use s3 object Lock to prevent object from being deleted or overwritten for a fixed amount of timeor indefinitely.
+
+Two way to manage retention:
+- Retention periods
+- Legal holds.
+
+S3 object lock works only in versioning buckets.
+S3 object lock doesnt prevent you from creating new verisons of an object.
+S3 object lock protection is maintained regardless of which storage class your objects reside in .
+
+
+Retention modes:
+
+- Compliance mode: an object is immutable until the retention period you defined has passed. You can´t  change its retention period.
+
+- Governance mode you can grant specific users permissions to alter the retention settings or delete the object if necessary.
+
+You can configure retention at the bucket level and for specific objects.
+
+A *legal hold* prevents an object version fro being overwritten or delete.
+Legal holds can be freely placed and removed by any user who has s3:PubObjectLegalHold permission.
+
+
