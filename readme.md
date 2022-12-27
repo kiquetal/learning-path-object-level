@@ -244,4 +244,43 @@ You can configure retention at the bucket level and for specific objects.
 A *legal hold* prevents an object version fro being overwritten or delete.
 Legal holds can be freely placed and removed by any user who has s3:PubObjectLegalHold permission.
 
+### S3 Replication
+
+Regional Requirements
+The source bucket owner must have the source and destination AWS Regions enabled for their account.
+
+Both source and destination buckets must have versioning enabled.
+
+Permissions
+
+To use replication, amazon S3 must have permission to replicate object from the source bucket to the destination bucket or buckets on your behalf.
+
+Object Lock
+
+
+#### S3 replication
+
+- Limitations- object no replicate:
+
+Objects that existed before you added the replication configuration to the bucket
+Objects in the source bucket that are replicas that were created by another replication rule
+Objects in the source bucket that have already been replicated to a different destination
+Objects created with server-side encryption using customer-provided encryption keys (SSE-C)
+Objects that are stored in S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, or S3 Glacier Deep Archive storage class
+Objects in the source bucket that the bucket owner doesn't have permissions for (when the bucket owner is not the owner of the object)
+Updates to bucket-level subresources
+Actions performed by lifecycle configuration
+
+- Objects to replicate
+
+Objects created after you add a replication configuration
+Unencrypted objects
+Objects encrypted at rest under Amazon S3 managed keys (SSE-S3) or customer master keys (CMKs) stored in AWS Key Management Service (AWS KMS)
+Object metadata from the source objects to the replicas
+
+Objects in the source bucket for which the bucket owner has permissions to read objects and ACLs
+Object ACL updates, unless you direct Amazon S3 to change the replica ownership when source and destination buckets aren't owned by the same accounts
+Object tags
+S3 Object Lock retention information
+
 
