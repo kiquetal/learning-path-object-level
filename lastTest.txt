@@ -1,0 +1,20 @@
+Question Category	Total questions	Total score
+Getting Started with AWS Storage	3	66.67 %
+Getting Started with Amazon Simple Storage Service (Amazon S3)	5	70.07 %
+Auditing Amazon Simple Storage Service (Amazon S3) Security	5	71.62 %
+Managing Amazon Simple Storage Service (Amazon S3)	5	60 %
+Amazon Simple Storage Service (Amazon S3) Cost Optimization	6	58.39 %
+Amazon Simple Storage Service (Amazon S3) Performance Optimization	6	61.15 %
+Securing and Protecting Your Data in Amazon Simple Storage Service (Amazon S3)	5	100 %
+Amazon Simple Storage Service (Amazon S3) Business Continuity and Disaster Recovery	6	38.55 %
+Amazon Simple Storage Service (Amazon S3) Storage Classes Deep Dive	5	49.93 %
+Question Category	Total questions	Total score
+Getting Started with AWS Storage	3	91.72 %
+Getting Started with Amazon Simple Storage Service (Amazon S3)	5	60 %
+Auditing Amazon Simple Storage Service (Amazon S3) Security	5	100 %
+Managing Amazon Simple Storage Service (Amazon S3)	5	80 %
+Amazon Simple Storage Service (Amazon S3) Cost Optimization	6	83.33 %
+Amazon Simple Storage Service (Amazon S3) Performance Optimization	6	91.72 %
+Securing and Protecting Your Data in Amazon Simple Storage Service (Amazon S3)	5	100 %
+Amazon Simple Storage Service (Amazon S3) Business Continuity and Disaster Recovery	6	41.72 %
+Amazon Simple Storage Service (Amazon S3) Storage Classes Deep Dive	5	89.93 %

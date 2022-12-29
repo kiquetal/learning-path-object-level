@@ -1,0 +1,664 @@
+AWS Skill Builder
+Skip to Main Content
+
+
+Learner dashboard
+My courses
+Storage Learning Plan: Object Storage
+Object Storage Learning Plan Badge Assessment
+
+
+
+EM
+Sign Out
+Enrique M. Talavera
+enriquemel@hotmail.com
+Learner dashboard
+My courses
+My activities
+My account
+Course catalog
+Classroom training
+AWS Certification
+AWS Partner training
+AWS Ramp-Up Guides
+Subscriptions
+Support
+Admin Menu
+Apps & Features
+Object Storage Learning Plan Badge Assessment
+Final Score: 80.9 %
+Single choice
+1)
+Your customer wants to make sure they can meet their Recovery Point Objective (RPO) of 20 minutes with Amazon S3 cross-region replication.
+
+ 
+
+What should they implement? 
+
+For source objects that are encrypted, specify that the replicas should not be encrypted.
+Enable Amazon S3 Replication Time Control (RTC).
+Comments: “If you need a predictable replication time backed by an SLA, you can enable S3 Replication Time Control (S3 RTC)".
+Direct all replicas to the Amazon S3 Standard object class.
+Enable Replica Modification Sync.
+Score: 1.45
+Single choice
+2)
+What is the minimum size of each part in a multipart object upload, except the last part?
+
+128KB
+10MB
+5GB
+Comments: For a multipart upload, each part must have at least 5MB except the last part that can be any size above 1 byte.
+5MB
+Score: 0.00
+Correct answer(s):
+128KB
+10MB
+5GB
+5MB
+Single choice
+3)
+You have been tasked with creating a bucket policy to limit the role "Accounting" to the bucket named "financial" in a prefix of "2021."
+
+ 
+
+Which of the following accurately provides the elements associated with the bucket policy to accomplish this requirement?
+
+Principal = arn:aws:iam:111122223333:/role/accounting
+Resource = arn:aws:s3:::financial/2021/*
+Comments: The element that allows the Accounting role access is the principal keyword. The resource element defines the the bucket and prefix that is allowed as part of the policy
+Principal = arn:aws:iam:111122223333:/role/financial
+Bucket = arn:aws:s3:::financial/2021/*
+Principal = arn:aws:iam:111122223333:/role/accounting
+Resource = arn:aws:s3:::financial/
+Condition = 2021
+Role = arn:aws:iam:111122223333:/role/accounting
+Resource = arn:aws:s3:::financial/2021/*
+Score: 1.45
+Single choice
+4)
+At what level can an Amazon S3 Object Lock be applied?
+
+Bucket, Object, and Access Point
+Comments: Object Lock cannot be applied on Access Points
+Bucket, Object, and Object Version
+Bucket, Prefix, and Object
+Object, Object Version, and Access Point
+Score: 0.00
+Correct answer(s):
+Bucket, Object, and Access Point
+Bucket, Object, and Object Version
+Bucket, Prefix, and Object
+Object, Object Version, and Access Point
+Single choice
+5)
+Which Amazon S3 storage classes support object versioning?
+
+All Amazon S3 storage classes, except Amazon S3 Outposts
+All Amazon S3 storage classes except Amazon S3 Glacier
+All Amazon S3 storage classes, except Amazon S3 Glacier Deep Archive
+Comments: Object versioning is supported on all Amazon S3 storage classes, except Amazon Outposts
+All Amazon S3 storage classes, except Amazon S3 Intelligent Tiering
+Score: 0.00
+Correct answer(s):
+All Amazon S3 storage classes, except Amazon S3 Outposts
+All Amazon S3 storage classes except Amazon S3 Glacier
+All Amazon S3 storage classes, except Amazon S3 Glacier Deep Archive
+All Amazon S3 storage classes, except Amazon S3 Intelligent Tiering
+Multiple Choice
+6)
+Which of the following are technical considerations when selecting an Amazon S3 storage class? (Select TWO.)
+
+Cost of the storage class.
+Comments: The less frequently accessed storage classes offer lower storage costs, but they are also not designed for data that is accessed daily
+Access pattern of the data.
+Comments: Amazon S3 offers you eight different storage classes, allowing you to choose which class of storage best fits your use cases, your data access frequency, and your regulatory compliance requirements
+Size of your data set.
+Whether the business or the data have compliance or long-term-storage requirements.
+Comments: S3 Glacier Flexible Retrieval is ideal for long-lived data that needs to be retrieved in minutes. S3 Glacier Deep Archive is ideal for long-lived data that needs to be retrieved in hours.
+Latency tolerance of an application or workload.
+Score: 0.72
+Correct answer(s):
+Cost of the storage class.
+Access pattern of the data.
+Size of your data set.
+Whether the business or the data have compliance or long-term-storage requirements.
+Latency tolerance of an application or workload.
+Multiple Choice
+7)
+How can you identify in which tier within Amazon S3 Intelligent-Tiering that your objects are located? (Select TWO)
+
+You can make a HEAD request on your objects to report the Amazon S3 Intelligent-Tiering archive access tiers.
+You can use Amazon S3 Object Tags to confirm the access tier of an object.
+You can use Amazon S3 analytics – storage class analysis to report the access tier of an object.
+You can use Amazon S3 Inventory to report the access tier of objects.
+Score: 1.45
+Single choice
+8)
+Which of the following organizes the Amazon S3 namespace at the highest level?
+
+Keys
+Comments: A bucket is a container for objects stored in Amazon S3 and they organize the Amazon S3 namespace at the highest level.
+Buckets
+Objects
+Regions
+Score: 0.00
+Correct answer(s):
+Keys
+Buckets
+Objects
+Regions
+Single choice
+9)
+You are an administrator for a global company and have been tasked with creating a number of Amazon S3 buckets.
+
+ 
+
+What must you consider when naming each of the buckets?
+
+The name of an Amazon S3 bucket must be unique across AWS partitions.
+Comments: Bucket names are unique across AWS partitions. I can have a two buckets named the same thing between the China partition, the GovCloud partition, and the standard commercial partition.
+The name of an Amazon S3 bucket must be unique within a Region.
+The name of an Amazon S3 bucket must be unique within a specific Availability Zone.
+The name of an Amazon S3 bucket must be unique within your AWS account.
+Score: 1.45
+Multiple Choice
+10)
+Which scenarios represent a good use for Amazon S3? (Select TWO)
+
+Storing computation and analytics data.
+Comments: Amazon S3 is a good choice to back up critical data, for cloud-based and on-premises systems. Amazon S3 can also store computation and large-scale analytics data, such as for financial transaction analysis, clickstream analytics, and media transcoding.
+Housing the root volume of a live operating system.
+Backing up critical data.
+Comments: Amazon S3 is a good choice to back up critical data, for cloud-based and on-premises systems. Amazon S3 can also store computation and large-scale analytics data, such as for financial transaction analysis, clickstream analytics, and media transcoding.
+Exposing a virtual tape library to on-premises backup systems.
+Providing a mountable file system for Linux-based workloads.
+Score: 1.45
+Multiple Choice
+11)
+Your are presenting to a new project team on Amazon S3 Inventory reports. What should you list in your presentation to answer this question.
+
+In which format can you publish Amazon S3 Inventory reports? (Select THREE)
+
+PDF
+ORC
+Comments: The inventory lists are published to CSV, ORC, or Parquet files in a destination bucket.
+CSV
+Comments: The inventory lists are published to CSV, ORC, or Parquet files in a destination bucket.
+Parquet
+Comments: The inventory lists are published to CSV, ORC, or Parquet files in a destination bucket.
+XLS
+Score: 1.45
+Single choice
+12)
+Which of the following method should not be used to upload files larger than 160 GB?
+
+AWS SDK
+Amazon CLI
+Amazon S3 REST API
+AWS Management Console
+Comments: Not capable of file uploads this large and cannot leverage MPU
+Score: 1.45
+Single choice
+13)
+What is the maximum size of each part in a multipart upload?
+
+5TB
+10GB
+5GB
+Comments: The maximum size for each part is 5GB. https://docs.aws.amazon.com/AmazonS3/latest/userguide/qfacts.html
+10MB
+Score: 1.45
+Multiple Choice
+14)
+What are some key operational advantages cloud storage services have versus on-premises storage? (Select FOUR)
+
+Covert Capital (sunk costs) into operational expense
+Encourage Innovation
+
+Comments: With AWS Storage, you can start development on one service and experiment using different services to meet your workflow's requirements. You can increase or reduce capacity as needed for your development and testing environment. Using AWS Storage services provides you a flexible environment for innovation.
+Superior management tools
+Comments: Both on-premise storage offerings and cloud have good management tools. Storage management tools were not mentioned in the training
+Strengthen Security
+
+Comments: Cloud providers secure the cloud infrastructure and separate the infrastructure from the customer applications. The benefit is you no longer need to be concerned about infrastructure security.
+Ability to respond to storage growth requirements quicker
+Comments: When using AWS Storage services, you can quickly change existing storage services or implement new ones.
+Score: 1.09
+Correct answer(s):
+Covert Capital (sunk costs) into operational expense
+Encourage Innovation
+
+Superior management tools
+Strengthen Security
+
+Ability to respond to storage growth requirements quicker
+Single choice
+15)
+A company designed a video platform where users can upload their videos to the platform and share among friends. The videos are uploaded by the app to an Amazon S3 bucket. With a successful launch and marketing campaign, the platform has enjoyed success in multiple countries. However, end users have started complaining about upload speed. The company wants to improve customer experience in the most cost-effective manner, with minimal code changes.
+
+ 
+
+Which approach would you recommend?
+
+Enable Amazon S3 Transfer acceleration.
+Comments: This is the right way to speed up transfers from other regions to Amazon S3.
+Deploy multiple Access points to the bucket.
+Create multiple buckets and place a bucket per region. Point the users to the closest bucket.
+Deploy an Amazon CloudFront distribution.
+Score: 1.45
+Single choice
+16)
+You are presenting information to your team on Amazon S3.
+
+What should you put in your presentation on how many tags can be applied per Amazon S3 object?
+
+50
+10
+Comments: You can associate up to 10 tags with an object. Tags associated with an object must have unique tag keys.
+5
+20
+Score: 1.45
+Single choice
+17)
+Your multi-threaded application running on an Amazon EC2 instance occasionally receives Status Code 503 responses when it tries to access objects in an Amazon S3 bucket.
+
+
+What does this indicate and how should you address it?
+
+Status code 503 indicates a malformed client request. Examine the code logic to find the error.
+Status code 503 indicates the Amazon S3 exception "Slow Down". Address this by implementing an exponential backoff and retry strategy for your access requests.
+Comments: “AmazonS3Exception: Slow Down (Service: Amazon S3; Status Code: 503; Error Code: 503 Slow Down”
+Status code 503 indicates that the request is Forbidden. Examine the access controls at the object level, and the code logic, to find the error.
+Status code 503 indicates that an AWS Budgets action has been used to turn off access to the bucket. Check if a previously configured budget threshold has been triggered in your account.
+Score: 1.45
+Single choice
+18)
+An Amazon S3 bucket has a lifecycle configuration in place and you then configure replication for it.
+
+ 
+
+Based on this, which of the following statements is true?
+
+The replica of each object will use the same object class as the source object.
+The lifecycle configuration of the source bucket gets disabled.
+For cost efficiency, all replicas will use the Glacier Deep Archive object by default.
+The lifecycle configuration of the source bucket is not replicated.
+Score: 0.00
+Correct answer(s):
+The replica of each object will use the same object class as the source object.
+The lifecycle configuration of the source bucket gets disabled.
+For cost efficiency, all replicas will use the Glacier Deep Archive object by default.
+The lifecycle configuration of the source bucket is not replicated.
+Single choice
+19)
+How often are Amazon S3 storage usage metrics delivered to Amazon CloudWatch?
+
+Every minute
+Every hour
+Once per day
+Comments: S3 storage usage metrics are delivered to Cloudwatch once per day. S3 request metrics and S3 replication metrics are delivered every minute.
+Every 15 minutes
+Score: 1.45
+Single choice
+20)
+You have configured an Amazon S3 Lifecycle rule to transition all objects contained within a defined prefix from Amazon S3 Standard into the Amazon S3 Standard-IA storage class 30 days after creation. Several months have passed and you notice that a subset of your data did not transition to the Amazon S3 Standard-IA storage class.
+
+ 
+
+What could have caused some objects to remain in the Amazon S3 Standard storage class?
+
+Your AWS IAM policy providing Amazon S3 Storage Class Analysis access to your entire bucket has been misconfigured.
+The proper object tags had not been applied to some of your objects.
+Some of your objects are smaller than 128 KB.
+Some of your objects are larger than the 5 GB limit for a single S3 PUT operation.
+Score: 1.45
+Multiple Choice
+21)
+You have enabled versioning with MFA Delete on an Amazon S3 bucket.
+
+ 
+
+What is required to permanently delete an object version in this bucket? (Select TWO) 
+
+Concatenation of your authentication device's serial number, a space, and the authentication code displayed on it
+Comments: "With MFA Delete, two forms of authentication are required to change the versioning state of a bucket or delete an object version: Your AWS account credentials; A valid six-digit code and serial number from an MFA authentication device in your physical possession."
+Amazon S3 Access Point
+AWS account credentials
+Total number of versions of the object
+Comments: "With MFA Delete, two forms of authentication are required to change the versioning state of a bucket or delete an object version: Your AWS account credentials; A valid six-digit code and serial number from an MFA authentication device in your physical possession."
+Presigned URL
+Score: 0.73
+Correct answer(s):
+Concatenation of your authentication device's serial number, a space, and the authentication code displayed on it
+Amazon S3 Access Point
+AWS account credentials
+Total number of versions of the object
+Presigned URL
+Multiple Choice
+22)
+What kind of Amazon S3 metrics can you monitor using Amazon CloudWatch? (Select THREE)
+
+Replication metrics
+Comments: https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudwatch-monitoring.html
+Encryption metrics
+Amazon Storage Lens Metrics
+Comments: https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudwatch-monitoring.html
+CloudFront Origin Metrics
+Request Metrics
+Comments: https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudwatch-monitoring.html
+Score: 1.45
+Single choice
+23)
+You have been tasked with examining the various Amazon S3 storage classes and providing a suggestion on which to use. The requirement is for rarely accessed data that needs immediate access in performance-sensitive use cases like image hosting, online file-sharing applications, medical imaging and health records, or news media assets.
+
+ 
+
+Based on the requirements, which storage class should you use?
+
+Amazon S3 Standard-IA
+Amazon S3 Standard
+Amazon S3 Glacier Flexible Retrieval
+Amazon S3 Glacier Instant Retrieval
+Score: 1.45
+Single choice
+24)
+You are briefing a new project team member on Amazon S3 features. How would you answer this question from the team.
+
+What Amazon S3 feature is used to categorize our objects in Amazon S3?
+
+Amazon S3 Storage Class Analysis
+Amazon S3 Intelligent-Tiering
+Amazon S3 Object Tags
+Comments: Use object tagging to categorize Amazon S3 objects .
+Amazon S3 Storage Lens
+Score: 1.45
+Single choice
+25)
+For a versioning enabled Amazon S3 bucket, which statement about Delete Markers is true?
+
+Delete Markers can never be deleted.
+If the most recent version of an object is a Delete Marker, a GET request to the object will fail.
+Comments: “When you try to retrieve an object whose current version is a delete marker, Amazon S3 returns a 404 Not Found error.”
+A Delete Marker does not have a version ID.
+There can be only one Delete Marker for a given object.
+Score: 1.45
+Single choice
+26)
+Amazon S3 Object Tags support up to how many key-value pairs for each object?
+
+6
+12
+Unlimited
+10
+Score: 1.45
+Single choice
+27)
+You are hosting a static website using Amazon S3 with your end users loading the website endpoint http://website.s3-website.us-east-1.amazonaws.com. You want to use JavaScript on the web pages stored in this bucket to make authenticated GET and PUT requests against this same bucket, using the Amazon S3 API endpoint "website.s3.us-east-1.amazonaws.com".
+
+What is required for this approach to work?
+
+You must store the IAM credentials needed for the authenticated requests in the same S3 bucket, encrypted using SSE-S3.
+You must add a Cross Origin Resource Sharing (CORS) configuration to the bucket.
+
+Comments: https://docs.aws.amazon.com/AmazonS3/latest/userguide/enabling-cors-examples.html[Course seems to be missing content on Cross-Origin Resource sharing (?). At minimum, add a "Resources" section and make sure to include this link in it]
+You must disable Block Public Access selectively on the objects to which PUT or GET requests are directed.
+You must create a pre-signed URL for every object to which PUT or GET requests are directed, and embed those URLs in the JavaScript.
+Score: 1.45
+Multiple Choice
+28)
+Over the last few months, your development team has been experimenting with several alternative software designs for a new application. Due to inadvertently introduced "runaway" bugs in prototype code, billions of objects get written to Amazon S3 occasionally, resulting in an unexpectedly large bill for Amazon S3 in the following month.
+
+How would you address this problem? (Select TWO)
+
+Configure AWS CloudTrail to capture every Amazon S3 PUT request. Build a Lambda function that parses the AWS CloudTrail logs periodically, and notifies you via SNS if a threshold is exceeded.
+Enable server access logging on every bucket in the test environment. Write a Lambda function that parses the aggregated server access logs periodically, and notifies you via SNS if a threshold is exceeded.
+Create a monthly fixed cost budget in AWS Budgets, using a reasonable dollar amount for alerting. Scope this dollar amount to Amazon S3-related costs only.
+Create a monthly fixed usage budget in AWS Budgets with alerting. Specify a reasonable limit for the number of permitted Amazon S3 API calls per month.
+Create a lifecycle configuration on every bucket in the test environment. Set up a rule in the lifecycle configuration to expire every object one day after creation.
+Comments: [Anything you have to do on each individual bucket is not a clean solution. AWS Budgets lets you handle the probem at the account level, and that is best]
+Score: 0.73
+Correct answer(s):
+Configure AWS CloudTrail to capture every Amazon S3 PUT request. Build a Lambda function that parses the AWS CloudTrail logs periodically, and notifies you via SNS if a threshold is exceeded.
+Enable server access logging on every bucket in the test environment. Write a Lambda function that parses the aggregated server access logs periodically, and notifies you via SNS if a threshold is exceeded.
+Create a monthly fixed cost budget in AWS Budgets, using a reasonable dollar amount for alerting. Scope this dollar amount to Amazon S3-related costs only.
+Create a monthly fixed usage budget in AWS Budgets with alerting. Specify a reasonable limit for the number of permitted Amazon S3 API calls per month.
+Create a lifecycle configuration on every bucket in the test environment. Set up a rule in the lifecycle configuration to expire every object one day after creation.
+Single choice
+29)
+In order to properly calculate storage costs you need to provide the minimum billable duration for objects stored in the Amazon S3 Intelligent-Tiering storage class.
+
+What is the minimum billable duration for objects stored in the Amazon S3 Intelligent-Tiering storage class?
+
+30 Days
+No minimum storage duration
+180 Days
+90 Days
+Score: 1.45
+Single choice
+30)
+You are defining requirements for the team on Amazon S3 Batch Operations. 
+
+Which of the following operations cannot be done through Amazon S3 Batch Operations?
+
+Copying objects
+Modifying tags on objects
+Placing locks on objects
+Deleting objects
+Comments: S3 Batch Operations does not support batch deletion of objects
+Score: 1.45
+Single choice
+31)
+You have a number of Amazon S3 buckets with access given to both AWS accounts and external accounts. You have been tasked by your management team to ensure that you get findings into the level of public or shared access for each of the Amazon S3 buckets.
+
+ 
+
+Which service would you use to complete this task?
+
+AWS Config
+AWS CloudTrail
+AWS IAM Access Analyzer
+AWS CloudWatch
+Score: 1.45
+Multiple Choice
+32)
+You have been tasked with documenting the benefits of the Amazon S3 Intelligent Tiering storage class.
+
+Which of the following are benefits of the Amazon S3 Intelligent Tiering storage class? (Select TWO)
+
+Discounted lifecycle transition fees when using the optional archive and deep archive tiers.
+No operational overhead, no lifecycle charges, no retrieval charges, and no minimum storage duration.
+Opt-in Archive Instant Access tier providing savings of 40% when compared to the Infrequent Access Tier.
+Up to 68% cost savings using the Frequent and Infrequent Access tiers.
+Up to 95% cost savings using the optional archive and deep archive tiers.
+Score: 0.72
+Correct answer(s):
+Discounted lifecycle transition fees when using the optional archive and deep archive tiers.
+No operational overhead, no lifecycle charges, no retrieval charges, and no minimum storage duration.
+Opt-in Archive Instant Access tier providing savings of 40% when compared to the Infrequent Access Tier.
+Up to 68% cost savings using the Frequent and Infrequent Access tiers.
+Up to 95% cost savings using the optional archive and deep archive tiers.
+Single choice
+33)
+You are looking for a storage solution to support data backup operations. You need to retrieve your data within a 24-48 hour window and would like to implement the most cost-effective solution possible.
+
+ 
+
+Which Amazon S3 storage class should you use in this scenario?
+
+S3 Glacier Flexible Retrieval
+Comments: S3 Glacier Flexible Retrieval offers free Bulk retrievals, ideal for data backup restores
+S3 Standard-IA
+S3 Outposts
+S3 One Zone-IA
+Score: 1.45
+Single choice
+34)
+You have been tasked with reducing storage costs.
+
+What is the most cost effective way to log detailed records for the requests that are made to an Amazon S3 bucket?
+
+Amazon S3 server access logging
+AWS CloudTrail
+Comments: S3 server access logging is the most cost effective way to log detailed records for the requests that are made to an S3 bucket. There is no cost for the feature other than the S3 storage costs of storing the logs. CloudTrail has separate costs for logging beyond the costs of S3 storage for the logs.
+AWS X-Ray
+AWS CloudWatch
+Score: 0.00
+Correct answer(s):
+Amazon S3 server access logging
+AWS CloudTrail
+AWS X-Ray
+AWS CloudWatch
+Single choice
+35)
+Which of the following is a poor example of "storage agility in AWS"?
+
+You will never have to over-provision and pay for more storage than you need "just in case" - AWS offers virtually unlimited scalability for capacity and performance.
+By avoiding long-term commitments to on-premises equipment purchases, you can take advantage of limited-term special pricing deals for storage that AWS announces several times every year.
+If you determine that a given storage service does not fit your application's needs, you can decommission the storage resource, and stop paying for it immediately.
+AWS manages the required underlying storage infrastructure, reducing your ongoing expenses for "keeping the lights on".
+Score: 1.45
+Multiple Choice
+36)
+A company has a SQL database and once a day the database is creating a dump which is stored in a single 100+ GB file. For compliance, the company needs to keep the dumps for 365 days. The company moves to Amazon S3 with lifecycle rules to reduce costs. The file's first 1 MB contains a header that includes references to all the tables in the file, which are stored sequentially. In a surprise audit, the system administrator is requested to get a specific table from a dump 85 days ago.
+
+ 
+
+What is the most cost-efficient way to get the table? (Select TWO)
+
+Use S3 Select on the first 1 MB to look at the header and find the location of the table in the file.
+Use a S3 GET operation to get the dump file and extract the relevant table from the file.
+Use S3 GET operation first to get the dump file and than use S3 Select to fetch the table in the file.
+Use S3 Select on the first 1 MB to look at the header and find the location of the table in the file. Then, use ranged get to fetch the required table.
+Comments: This is correct answer. You first fetch only the 1 MB to get range of the table. and than use select with scanrange to fetch the table. https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html
+Use S3 GET operation first to get the dump file, look at the header, and than use S3 Select to fetch the table in the file.
+Comments: This is not cost efficient, cause you could get just the first 1 M to find the table location in the header.
+Score: 0.73
+Correct answer(s):
+Use S3 Select on the first 1 MB to look at the header and find the location of the table in the file.
+Use a S3 GET operation to get the dump file and extract the relevant table from the file.
+Use S3 GET operation first to get the dump file and than use S3 Select to fetch the table in the file.
+Use S3 Select on the first 1 MB to look at the header and find the location of the table in the file. Then, use ranged get to fetch the required table.
+Use S3 GET operation first to get the dump file, look at the header, and than use S3 Select to fetch the table in the file.
+Single choice
+37)
+A company is preparing for their global annual sales and learning conference. To get proper attention and registration they have built an event website that is stored in a static Amazon S3 bucket. The website contains a lot of web pages with rich visual and textual content. Marketing has asked IT operations to ensure that visitors to the website, from all over the world, get the content as quickly as possible.
+
+ 
+
+What is the most efficient and scalable way to achieve this requirement?
+
+Create a bucket with the website per region, and use Amazon Route 53 to direct the user to the closest region.
+Partition the website content to multiple buckets to improve the per-section performance.
+
+Use Amazon S3 Transfer acceleration to speed up loading of the content.
+Create an Amazon CloudFront Distribution and use the Amazon S3 bucket as the origin.
+Comments: This is exactly the scenario which Amazon CloudFront was designed to meet. Serve static content closer to the user.
+Score: 1.45
+Single choice
+38)
+You are working on a new project using Amazon S3 multipart upload. How would you answer this question from a team member.
+
+What is the maximum number of parts that can be created for a single object when using Amazon S3 multipart upload?
+
+10,000
+There is no limit
+3,500 per partitioned prefix
+5,500
+Score: 1.45
+Single choice
+39)
+A customer service team accesses case data daily for up to 30 days. Cases can be reopened and require immediate access for 1 year after they are closed. Reopened cases require 2 days to process.
+
+ 
+
+Which solution meets the requirements for the data and is the most cost-efficient?
+
+Store case data in Amazon S3 Standard. Use a lifecycle policy to move the data into S3 Standard-Infrequent Access (S3 Standard-IA) after 30 days.
+Comments: S3 Standard-IA costs less than S3 Standard for infrequently accessed data.
+Store case data in Amazon S3 Intelligent-Tiering to automatically move data between tiers based on access frequency.
+Store case data in Amazon S3 Standard. Use a lifecycle policy to move the data into Amazon S3 Glacier after 30 days.
+Store all case data in Amazon S3 Standard so that it is available whenever needed.
+Score: 1.45
+Single choice
+40)
+What AWS service can be used to analyze Amazon S3 server access logs?
+
+Amazon Athena
+Comments: Amazon Athena is an interactive query service that makes it easy for you to analyze data directly in Amazon S3, using standard SQL.
+Amazon DynamoDB
+Amazon S3 Storage Lens
+Amazon Macie
+Score: 1.45
+Multiple Choice
+41)
+Which of the following are Amazon S3 managed rules that AWS Config could monitor for Amazon S3? (Select FOUR)
+
+Are any of the buckets open to the public?
+Comments: Checking for buckets that are open to the public is an S3 managed rule for AWS Config.
+Is versioning enabled?
+Comments: Checking that versioning is enabled on all S3 buckets is an S3 managed rule for AWS Config.
+Are any objects in the Glacier Deep Archive storage class?
+Is replication enabled?
+Comments: Checking for replication rules is an S3 managed rule for AWS Config
+Is logging enabled on all buckets?
+Comments: Checking that logging is enabled on all S3 buckets is an S3 managed rule for AWS Config.
+Score: 1.00
+Single choice
+42)
+Which endpoint service uses only endpoint policies to secure the endpoint?
+
+Interface endpoints
+Access endpoints
+Gateway endpoints
+Comments: Gateway endpoints use endpoint policies for security.
+Direct Connect endpoints
+Score: 1.45
+Single choice
+43)
+You have been tasked with making sure all new objects in a bucket are minimally encrypted at rest regardless of the options specified when the object is uploaded so not to affect currently running applications.
+
+How would you achieve this?
+
+Create an AWS Key Management Service (KMS) key and assign permission to the key for application roles and AWS IAM users.
+
+Modify your bucket policy with condition statement to deny any puts where the x-amz-server-side-encryption:true header is missing.
+Use an access point on the bucket and redirect all application traffic to the access point.
+Enable default encryption for the bucket with at least the sse-s3 option.
+Comments: This will ensure that any new objects put in a bucket will at least get encrypted with the sse-s3 option.
+Score: 1.45
+Single choice
+44)
+In which of the following cases would you use a presigned URL?
+
+When you don’t have a set expiration date.
+When you need to access Amazon S3 from both on-premises locations and from Amazon EC2 instances simultaneously.
+When you need fine-grained access controls while working across AWS account boundaries.
+So a user can upload an object to your bucket without needing to have AWS permissions.
+Comments: Presigned URLs are useful if you want your user to be able to upload a specific object to your bucket without needing to have AWS security credentials or permissions.
+Score: 1.45
+Single choice
+45)
+You have been asked by your team leader to strengthen the security in your environment. You need to audit your Amazon S3 bucket for changes and notify the team lead of any questionable behavior. You also need to make sure that you compare your AWS account to the recommended best practices to make sure that your Amazon S3 bucket permissions do not have open access.
+
+ 
+
+Which service should you use to monitor this information?
+
+Amazon S3 access logging
+AWS CloudWatch
+AWS CloudTrail
+AWS Trusted Advisor
+Score: 1.45
+Multiple Choice
+46)
+What are the types of Amazon S3 logging available? (Select TWO)
+
+Amazon S3 access logs
+Amazon S3 Inventory
+AWS CloudWatch
+Amazon S3 Storage Lens
+AWS CloudTrail
+Score: 1.45
+

@@ -37,3 +37,13 @@ of the same object in one bucket.
 - Delete object tags
 - S3 Object Lock
 - S3 Object Lock legal hold
+
+
+### S3 Replication
+
+##### Replication Metrics
+
+- Bytes Pending Replication
+- OPerations Pending Replication
+- Replication latency
+
